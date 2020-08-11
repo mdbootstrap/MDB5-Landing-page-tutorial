@@ -1,0 +1,91 @@
+.form-file {
+  height: $form-file-height;
+}
+
+.form-file-input {
+  height: $form-file-height;
+
+  &:focus-within ~ .form-file-label {
+    border: none;
+    box-shadow: none;
+  }
+
+  &:focus-within ~ .form-file-label .form-file-text,
+  &:focus-within ~ .form-file-label .form-file-button {
+    border-style: solid;
+    border-color: $form-file-label-focus-border-color;
+    transition: $form-file-label-focus-transition;
+  }
+
+  &:focus-within ~ .form-file-label .form-file-text {
+    border-width: $form-file-label-focus-text-border-width;
+  }
+
+  &:focus-within ~ .form-file-label .form-file-button {
+    border-width: $form-file-label-focus-button-border-width;
+  }
+
+  &[disabled] ~ .form-file-label .form-file-text,
+  &:disabled ~ .form-file-label .form-file-text,
+  &[disabled] ~ .form-file-label .form-file-button,
+  &:disabled ~ .form-file-label .form-file-button {
+    background-color: $form-file-label-disabled-background-color;
+  }
+}
+
+.form-file-label {
+  height: $form-file-label-height;
+  border-color: $form-file-label-border-color;
+}
+
+.form-file-text {
+  padding-top: $form-file-text-padding-y;
+  padding-bottom: $form-file-text-padding-y;
+  border-color: $form-file-text-border-color;
+}
+
+.form-file-button {
+  line-height: $form-file-button-line-height;
+  background-color: $form-file-button-background-color;
+  border-color: $form-file-button-border-color;
+}
+
+.form-file-sm {
+  height: $form-file-sm-height;
+  font-size: $form-file-sm-font-size;
+
+  .form-file-input {
+    height: $form-file-sm-height;
+  }
+
+  .form-file-label {
+    height: $form-file-sm-height;
+  }
+
+  .form-file-text,
+  .form-file-button {
+    line-height: $form-file-sm-line-height;
+    padding-top: $form-file-sm-padding-y;
+    padding-bottom: $form-file-sm-padding-y;
+  }
+}
+
+.form-file-lg {
+  height: $form-file-lg-height;
+  font-size: $form-file-lg-font-size;
+
+  .form-file-input {
+    height: $form-file-lg-height;
+  }
+
+  .form-file-label {
+    height: $form-file-lg-height;
+  }
+
+  .form-file-text,
+  .form-file-button {
+    line-height: $form-file-lg-line-height;
+    padding-top: $form-file-lg-padding-y;
+    padding-bottom: $form-file-lg-padding-y;
+  }
+}
