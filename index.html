@@ -23,322 +23,293 @@
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Custom styles -->
+    <link rel="stylesheet" href="css/styles.css" />
     <style></style>
   </head>
   <body>
     <header>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <!-- Container wrapper -->
         <div class="container">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#">Steak House</a>
+
+          <!-- Toggle button -->
           <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarExample01"
-            aria-controls="navbarExample01"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarExample01">
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left links -->
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#">
-                  <img
-                    src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png"
-                    height="16"
-                    alt=""
-                    loading="lazy"
-                /></a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Articles</a>
+                <a class="nav-link" href="#book">Book</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="#team">Team</a>
               </li>
             </ul>
+            <!-- Left links -->
           </div>
+          <!-- Collapsible wrapper -->
         </div>
+        <!-- Container wrapper -->
       </nav>
-      <!-- Navbar -->
 
       <!-- Background image -->
-      <div
-        class="p-5 text-center bg-image"
-        style="
-          background-image: url('img/cover.jpeg');
-          height: 400px;
-          margin-top: 58px;
-        "
-      >
+      <div class="p-5 text-center bg-image" id="intro">
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
           <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white">
-              <h1 class="mb-3">Travel Blog</h1>
-              <h4 class="mb-3">
-                Travel is the only thing you buy that makes you richer
-              </h4>
+              <h1 class="mb-3">Steak House</h1>
+              <h4 class="mb-3">A premium and authentic steak house</h4>
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="#!"
+                role="button"
+                >See menu</a
+              >
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="#!"
+                role="button"
+                >Book a table</a
+              >
             </div>
           </div>
         </div>
       </div>
       <!-- Background image -->
     </header>
-    <main class="my-4">
-      <!-- Posts -->
-      <section id="posts" class="text-center mb-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mb-4">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
-                data-ripple-color="light"
-              >
-                <img src="img/i1.jpg" class="w-100" />
-                <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
-                </a>
-              </div>
-              <h5>This is an title of the article</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ea
-                mollitia, ab quod nesciunt delectus ipsum odit consequatur
-                tempora commodi atque? Harum deleniti inventore tempore mollitia
-                quod eum nemo? Similique.
-              </p>
-              <button type="button" class="btn btn-info btn-rounded">
-                Read more
-              </button>
+    <main>
+      <div class="container-fluid px-0">
+        <section class="divider py-5">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 text-right pr-5">
+              <h2>Discover our menu</h2>
             </div>
-            <div class="col-md-6 mb-4">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
-                data-ripple-color="light"
-              >
-                <img src="img/i2.jpg" class="w-100" />
-                <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
-                </a>
-              </div>
-              <h5>This is an title of the article</h5>
+            <div class="col-md-4">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ea
-                mollitia, ab quod nesciunt delectus ipsum odit consequatur
-                tempora commodi atque? Harum deleniti inventore tempore mollitia
-                quod eum nemo? Similique.
+                Few things come close to the joy of steak and chips -cooked
+                simply with tender, loving care. Rest assured that our chefs
+                treat our Irish beef with the respect it deserves. The open
+                kitchen in many of our steakhouses are testimony to that.
               </p>
-              <button type="button" class="btn btn-info btn-rounded">
-                Read more
-              </button>
             </div>
-            <div class="col-md-6 mb-4">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
-                data-ripple-color="light"
-              >
-                <img src="img/i3.jpg" class="w-100" />
-                <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
-                </a>
-              </div>
-              <h5>This is an title of the article</h5>
+          </div>
+        </section>
+
+        <section id="about" class="text-center text-white">
+          <h2 class="my-5">Our promise:</h2>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 text-right">
+              <h2>100% meat</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ea
-                mollitia, ab quod nesciunt delectus ipsum odit consequatur
-                tempora commodi atque? Harum deleniti inventore tempore mollitia
-                quod eum nemo? Similique.
+                Meat always comes to us from the same supplier. For years it has
+                not disappointed us with quality. It is usually fresh, sometimes
+                frozen. At least 3 times a week.
               </p>
-              <button type="button" class="btn btn-info btn-rounded">
-                Read more
-              </button>
             </div>
-            <div class="col-md-6 mb-4">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
-                data-ripple-color="light"
-              >
-                <img src="img/i4.jpg" class="w-100" />
-                <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
-                </a>
-              </div>
-              <h5>This is an title of the article</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ea
-                mollitia, ab quod nesciunt delectus ipsum odit consequatur
-                tempora commodi atque? Harum deleniti inventore tempore mollitia
-                quod eum nemo? Similique.
-              </p>
-              <button type="button" class="btn btn-info btn-rounded">
-                Read more
-              </button>
+            <div class="col-md-4">
+              <img src="img/1.jpg" alt="meat" class="img-fluid" />
             </div>
-            <div class="col-md-6 mb-4">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
-                data-ripple-color="light"
-              >
-                <img src="img/i5.jpg" class="w-100" />
-                <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
-                </a>
-              </div>
-              <h5>This is an title of the article</h5>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 text-right">
+              <h2>100% spices</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ea
-                mollitia, ab quod nesciunt delectus ipsum odit consequatur
-                tempora commodi atque? Harum deleniti inventore tempore mollitia
-                quod eum nemo? Similique.
+                The quality of the beef served at Whiskey in the Jar is so high
+                that it is a shame to spoil its flavor with too many spices. We
+                are minimalist with respect to the issue. Just before putting on
+                the barbecue, the meat is lightly sprinkled with Himalayan salt
+                and black hammered pepper.
               </p>
-              <button type="button" class="btn btn-info btn-rounded">
-                Read more
-              </button>
             </div>
-            <div class="col-md-6 mb-4">
-              <div
-                class="bg-image hover-overlay ripple shadow-1-strong rounded mb-4"
-                data-ripple-color="light"
-              >
-                <img src="img/i6.jpg" class="w-100" />
-                <a href="#!">
-                  <div
-                    class="mask"
-                    style="background-color: rgba(251, 251, 251, 0.2);"
-                  ></div>
-                </a>
-              </div>
-              <h5>This is an title of the article</h5>
+            <div class="col-md-4">
+              <img src="img/2.jpg" alt="meat" class="img-fluid" />
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 text-right">
+              <h2>100% taste</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ea
-                mollitia, ab quod nesciunt delectus ipsum odit consequatur
-                tempora commodi atque? Harum deleniti inventore tempore mollitia
-                quod eum nemo? Similique.
+                Good taste is what we are up to. We cook with passion,
+                courageously combine ingredients, creating original recipes of
+                dishes. We take wings when guests like our kitchen
               </p>
-              <button type="button" class="btn btn-info btn-rounded">
-                Read more
-              </button>
+            </div>
+            <div class="col-md-4">
+              <img src="img/3.jpg" alt="meat" class="img-fluid" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="book">
+        <!-- Background image -->
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <a class="btn btn-outline-light btn-lg m-2" href="#!" role="button"
+              >Book a table</a
+            >
+          </div>
+        </div>
+
+        <!-- Background image -->
+      </section>
+      <section id="team" class="text-center">
+        <h2 class="my-5 text-white">Our team</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/t1.jpg" alt="..." class="img-fluid" />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Fig</h5>
+                    <p class="card-text">
+                      I cook traditional recipes that are sacred in my family,
+                      to share my love for food.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/t2.jpg" alt="..." class="img-fluid" />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Sumit</h5>
+                    <p class="card-text">
+                      I believe cooking is like creating art. You have to
+                      carefully craft each dish with love and time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/t3.jpg" alt="..." class="img-fluid" />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Ahmed</h5>
+                    <p class="card-text">
+                      I strongly believe eating out should be a part of
+                      everyone's routine.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Posts -->
-      <!-- Pagination -->
-      <section id="pagination" class="d-flex justify-content-center">
-        <nav aria-label="...">
-          <ul class="pagination pagination-circle">
-            <li class="page-item">
-              <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
-                >Previous</a
-              >
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item active" aria-current="page">
-              <a class="page-link" href="#"
-                >2 <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#">Next</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <!-- Pagination -->
     </main>
-    <footer class="bg-light text-center text-lg-left">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Footer Content</h5>
+    <footer>
+      <footer class="bg-black text-white text-center text-lg-left">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-5">Locations:</h5>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-              atque ea quis molestias. Fugiat pariatur maxime quis culpa
-              corporis vitae repudiandae aliquam voluptatem veniam, est atque
-              cumque eum delectus sint!
-            </p>
+              <p>
+                226 Halifax Court<br />
+                New York, NY 10031
+                <br />
+                (248) 675-4007
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <p class="mt-3">
+                416 NE. Sherman St<br />
+                New York, NY 10027
+
+                <br />
+                (248) 675-4007
+              </p>
+              <p>
+                59 North Shadow Brook St.
+                <br />
+                Bronx, NY 10457
+
+                <br />
+                (248) 675-4007
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0"></div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-5">Working hours:</h5>
+              <div class="row">
+                <div class="col-6">
+                  <p>Monday-Friday</p>
+                  <p>Saturday</p>
+                  <p>Sunday</p>
+                </div>
+                <div class="col-6">
+                  <p>9:00 AM - 5:00PM</p>
+                  <p>12:00 AM - 11:00PM</p>
+                  <p>10:00PM</p>
+                </div>
+              </div>
+            </div>
+            <!--Grid column-->
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-dark">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-0">Links</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="text-dark">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 3</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
+          <!--Grid row-->
         </div>
-        <!--Grid row-->
-      </div>
-      <!-- Grid container -->
+        <!-- Grid container -->
 
-      <!-- Copyright -->
-      <div
-        class="text-center p-3"
-        style="background-color: rgba(0, 0, 0, 0.2);"
-      >
-        © 2020 Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-      </div>
-      <!-- Copyright -->
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2);"
+        >
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/"
+            >MDBootstrap.com</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
     </footer>
   </body>
 
